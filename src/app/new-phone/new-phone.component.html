@@ -1,0 +1,17 @@
+<h2>Add A New Phone To The Inventory</h2>
+
+<form (ngSubmit)="sendNewPhoneToApi()" #myForm="ngForm">
+      <p>  Brand
+        <input type="text" name="brand" [(ngModel)]="newPhone.brand" required />
+      </p>
+      <p> Model Name
+        <input type="text" name="name" [(ngModel)]="newPhone.name" required />
+      </p>
+      <p> specs, separated by commas.
+        <input type="text" name="specs" [(ngModel)]="newPhone.specs" required />
+      </p>
+      <p> Image
+        <input type="text" name="image" [(ngModel)]="newPhone.image" required />
+      </p>
+      <button type="submit"> Submit </button>
+    </form>
